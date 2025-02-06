@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="/imagenes/icon.png">
+<title>Licenciatura en Ingeniería de Software</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yantramanav", sans-serif; 
+}
+
+body {
+    font-family: "Yantramanav", sans-serif;
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181848;
+    text-align: center;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+.menu-navegacion a {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.menu-navegacion a:hover {
+    color: #f0a818;
+}
+
+.logo {
+    max-width: 200px; 
+}
+
+h1 {
+    color: #181848;
+    font-weight: 600;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.bienvenida {
+    padding-top: 60px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #181848;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.ubi {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+}
+
+.seccion-contacto {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #e6f0ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.formulario-contacto button {
+    padding: 10px;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-navegacion {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .menu-navegacion a {
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    .ubi {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion">
+          <a href="index.html">Inicio</a>
+          <a href="Oferta educativa.html">Oferta Educativa</a>
+          <img src="/imagenes/escudo.png" alt="Logo" class="logo">
+          <a href="plan.html">Plan de Estudios</a>
+          <a href="Contactanos.html">Contáctanos</a>
+        </nav>
+    </header>
+    
+    <h1 class="bienvenida">Contáctanos</h1>
+    <section class="seccion-contacto">
+        <p>¿Tienes alguna pregunta o necesitas ayuda? No dudes en contactarnos.</p>
+        <form class="formulario-contacto">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Av. Universidad 3004, Coyoacán, CDMX</p>
+        <iframe class="ubi" src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+    </footer>
+</body>
+</html>
